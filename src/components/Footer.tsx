@@ -55,7 +55,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white">Connect</h4>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/ephraimx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800/50 rounded-full flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-blue-500/20 transition-all duration-300"
@@ -63,7 +63,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/oghenefejiro-esosuota/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800/50 rounded-full flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-blue-500/20 transition-all duration-300"
@@ -71,7 +71,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:personal.ephraim@gmail.com"
                 className="w-10 h-10 bg-gray-800/50 rounded-full flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-blue-500/20 transition-all duration-300"
               >
                 <Mail size={20} />
@@ -82,7 +82,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-800/50 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Portfolio. All rights reserved.
+            © {currentYear} All rights reserved.
           </p>
           <p className="text-gray-400 text-sm flex items-center mt-4 md:mt-0">
             Built with <Heart className="mx-1 text-red-500" size={16} /> using React & Tailwind CSS

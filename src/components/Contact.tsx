@@ -2,6 +2,7 @@
 import { Mail, Github, Linkedin, Download, MapPin, Send, CheckCircle } from 'lucide-react';
 import { useState } from 'react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import { Button } from 'react-day-picker';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -83,10 +84,10 @@ const Contact = () => {
               
               <div className="space-y-4">
                 {[
-                  { icon: Mail, label: 'Email', value: 'your.email@example.com', href: 'mailto:your.email@example.com' },
-                  { icon: Github, label: 'GitHub', value: 'github.com/yourusername', href: 'https://github.com/yourusername' },
-                  { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/yourprofile', href: 'https://linkedin.com/in/yourprofile' },
-                  { icon: MapPin, label: 'Location', value: 'San Francisco, CA', href: null }
+                  { icon: Mail, label: 'Email', value: 'personal.ephraim[at]gmail.com', href: 'mailto:personal.ephraim@gmail.com' },
+                  { icon: Github, label: 'GitHub', value: 'github.com/ephraimx', href: 'https://github.com/ephraimx' },
+                  { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/oghenefejiro-esosuota', href: 'https://linkedin.com/in/oghenefejiro-esosuota' },
+                  // { icon: MapPin, label: 'Location', value: 'San Francisco, CA', href: null }
                 ].map((item, index) => (
                   <div 
                     key={item.label}
@@ -115,21 +116,22 @@ const Contact = () => {
                 ))}
               </div>
 
-              <div className="mt-8 pt-8 border-t border-gray-700/50">
+              <div className="mt-8 pt-8 border-t border-gray-700/50 flex justify-center">
                 <a
-                  href="/resume.pdf"
-                  download
-                  className="w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-cyan-700 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105"
+                  href="https://docs.google.com/document/d/1R0jixsNOhF2NPbUjErwYOUmpx8hUAyu9Ejy_-uPCfgg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-cyan-700 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105"
                 >
                   <Download className="mr-2" size={20} />
-                  Download Resume
+                  View Resume
                 </a>
               </div>
             </div>
           </div>
 
           {/* Enhanced Contact Form */}
-          <div 
+          {/* <div 
             className={`transition-all duration-700 ${
               isIntersecting ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
             }`}
@@ -236,7 +238,7 @@ const Contact = () => {
                 </button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

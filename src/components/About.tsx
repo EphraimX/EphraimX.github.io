@@ -5,40 +5,40 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 const About = () => {
   const skillsWithProgress = [
     { category: 'Cloud Platforms', skills: [
-      { name: 'AWS', percentage: 95 },
-      { name: 'Azure', percentage: 85 },
-      { name: 'GCP', percentage: 80 },
-      { name: 'Digital Ocean', percentage: 90 }
+      { name: 'AWS', percentage: 75 },
+      // { name: 'Azure', percentage: 85 },
+      // { name: 'GCP', percentage: 80 },
+      // { name: 'Digital Ocean', percentage: 90 }
     ]},
     { category: 'Infrastructure as Code', skills: [
-      { name: 'Terraform', percentage: 95 },
-      { name: 'CloudFormation', percentage: 90 },
+      { name: 'Terraform', percentage: 80 },
+      { name: 'CloudFormation', percentage: 60 },
       { name: 'Pulumi', percentage: 75 },
-      { name: 'Ansible', percentage: 85 }
+      // { name: 'Ansible', percentage: 85 }
     ]},
     { category: 'Containers & Orchestration', skills: [
-      { name: 'Docker', percentage: 95 },
-      { name: 'Kubernetes', percentage: 90 },
+      { name: 'Docker', percentage: 60 },
+      // { name: 'Kubernetes', percentage: 90 },
       { name: 'ECS', percentage: 85 },
-      { name: 'EKS', percentage: 88 }
+      // { name: 'EKS', percentage: 88 }
     ]},
     { category: 'CI/CD & Automation', skills: [
-      { name: 'GitHub Actions', percentage: 92 },
-      { name: 'Jenkins', percentage: 85 },
-      { name: 'GitLab CI', percentage: 80 },
+      { name: 'GitHub Actions', percentage: 90 },
+      { name: 'Jenkins', percentage: 70 },
+      { name: 'GitLab CI', percentage: 90 },
       { name: 'CircleCI', percentage: 75 }
     ]},
-    { category: 'Monitoring & Observability', skills: [
-      { name: 'Prometheus', percentage: 90 },
-      { name: 'Grafana', percentage: 88 },
-      { name: 'ELK Stack', percentage: 85 },
-      { name: 'DataDog', percentage: 80 }
-    ]},
+    // { category: 'Monitoring & Observability', skills: [
+    //   { name: 'Prometheus', percentage: 90 },
+    //   { name: 'Grafana', percentage: 88 },
+    //   { name: 'ELK Stack', percentage: 85 },
+    //   { name: 'DataDog', percentage: 80 }
+    // ]},
     { category: 'Programming', skills: [
       { name: 'Python', percentage: 90 },
-      { name: 'Go', percentage: 80 },
-      { name: 'Bash', percentage: 95 },
-      { name: 'TypeScript', percentage: 85 }
+      // { name: 'Go', percentage: 80 },
+      { name: 'Bash', percentage: 40 },
+      // { name: 'TypeScript', percentage: 85 }
     ]}
   ];
 
@@ -66,19 +66,13 @@ const About = () => {
             >
               <div className="space-y-6">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  I'm a passionate Cloud Infrastructure Engineer with 5+ years of experience building 
-                  and scaling cloud-native solutions. My expertise spans across modern DevOps practices, 
-                  infrastructure automation, and container orchestration.
+                  I'm a Cloud Infrastructure Engineer with about 3 years of experience developing and automating cloud native infrastructure. I spend most of my time working with CI/CD pipelines, containers, and tools like Docker, Kubernetes and Pulumi to deliver solid infrastructure.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Beyond engineering, I'm deeply committed to technical writing and knowledge sharing. 
-                  I believe in making complex cloud concepts accessible through clear documentation, 
-                  tutorials, and thought leadership articles.
+                  Besides engineering, I write a ton—distilling technical topics into easy-to-read, actionable guides. Be it deployment workflows, real world architecture setups, or just things to help other engineers get unstuck, and move faster, I love creating these.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  When I'm not architecting cloud solutions or writing about them, you'll find me 
-                  contributing to open-source projects, experimenting with emerging technologies, 
-                  and mentoring aspiring DevOps engineers.
+                  Recently I've been digging further into open-source tools, trying my hand at AI integrations, and growing a portfolio of hands-on, DevOps-based projects to keep my skills sharp and share what I learn along the way.
                 </p>
               </div>
             </div>

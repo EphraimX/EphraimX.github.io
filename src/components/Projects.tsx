@@ -3,53 +3,52 @@ import ProjectCard from './ProjectCard';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const Projects = () => {
-  const projects = [
-    {
-      title: 'Multi-Cloud Kubernetes Platform',
-      description: 'Designed and implemented a multi-cloud Kubernetes platform using Terraform, enabling seamless workload deployment across AWS, Azure, and GCP with automated failover and cost optimization.',
-      techStack: ['Kubernetes', 'Terraform', 'AWS', 'Azure', 'GCP', 'Helm', 'Istio'],
-      githubUrl: 'https://github.com/username/k8s-multicloud',
-      demoUrl: 'https://demo.example.com',
-      featured: true,
-      metrics: { deploymentTime: '75%', uptime: '99.9%', costSaving: '40%' }
-    },
-    {
-      title: 'CI/CD Pipeline Automation',
-      description: 'Built a comprehensive CI/CD pipeline using GitHub Actions and Jenkins, reducing deployment time by 75% and implementing automated security scanning and compliance checks.',
-      techStack: ['GitHub Actions', 'Jenkins', 'Docker', 'SonarQube', 'Trivy', 'ArgoCD'],
-      githubUrl: 'https://github.com/username/cicd-automation',
-      metrics: { deploymentTime: '75%', securityScore: '95%', efficiency: '80%' }
-    },
-    {
-      title: 'Infrastructure Monitoring Stack',
-      description: 'Deployed a complete observability solution using Prometheus, Grafana, and ELK stack with custom dashboards and alerting rules for proactive incident management.',
-      techStack: ['Prometheus', 'Grafana', 'Elasticsearch', 'Logstash', 'Kibana', 'AlertManager'],
-      githubUrl: 'https://github.com/username/monitoring-stack',
-      metrics: { mttr: '60%', visibility: '100%', alerts: '90%' }
-    },
-    {
-      title: 'Serverless Data Pipeline',
-      description: 'Architected a serverless data processing pipeline on AWS using Lambda, Step Functions, and EventBridge to handle millions of events daily with auto-scaling and cost efficiency.',
-      techStack: ['AWS Lambda', 'Step Functions', 'EventBridge', 'DynamoDB', 'S3', 'Python'],
-      githubUrl: 'https://github.com/username/serverless-pipeline',
-      featured: true,
-      metrics: { events: '10M/day', costSaving: '60%', latency: '50ms' }
-    },
-    {
-      title: 'GitOps Configuration Management',
-      description: 'Implemented GitOps methodology using ArgoCD and Flux for declarative configuration management across multiple environments with automated reconciliation.',
-      techStack: ['ArgoCD', 'Flux', 'Kustomize', 'Git', 'Kubernetes', 'Helm'],
-      githubUrl: 'https://github.com/username/gitops-config',
-      metrics: { deployments: '100+', environments: '5', reliability: '99.5%' }
-    },
-    {
-      title: 'Cloud Cost Optimization Tool',
-      description: 'Developed a Python-based tool for analyzing and optimizing cloud costs across multiple accounts, resulting in 40% cost reduction through automated recommendations.',
-      techStack: ['Python', 'AWS Cost Explorer', 'Boto3', 'Pandas', 'FastAPI', 'React'],
-      githubUrl: 'https://github.com/username/cost-optimizer',
-      metrics: { costSaving: '40%', accounts: '50+', recommendations: '200+' }
-    },
-  ];
+    const projects = [
+      {
+        title: 'Glowberry Global Tax Simulator (Full Stack CI/CD Deployment)',
+        description: 'Built and deployed a full-stack global tax structure simulator with Docker Compose using GitHub Actions, GitLab CI/CD, Jenkins, CircleCI, Terraform, and Pulumi. Each CI/CD and IaC tool was implemented and documented as a separate pipeline.',
+        techStack: ['Docker Compose', 'GitHub Actions', 'GitLab CI/CD', 'Jenkins', 'CircleCI', 'Terraform', 'Pulumi'],
+        githubUrl: 'https://github.com/EphraimX/glowberry-global-tax-structure-simulator-project-series',
+        featured: true,
+        metrics: { toolsIntegrated: '6', pipelinesBuilt: '12+', deployTargets: 'Koyeb, Fly.io, Vercel' }
+      },
+      {
+        title: 'CI/CD Pipeline for Python Backend on Fly.io (GitHub Actions)',
+        description: 'Set up a CI/CD workflow for a Python backend on Fly.io using GitHub Actions. Focused on automated testing, Docker-based builds, and seamless deployment to production.',
+        techStack: ['Python', 'GitHub Actions', 'Fly.io', 'Docker'],
+        githubUrl: 'https://github.com/EphraimX/blbjzl-ai-accountability-application-github-actions',
+        metrics: { deploymentTime: 'Shortened by 70%', manualSteps: '0', toolCount: '4' }
+      },
+      {
+        title: 'Frontend Deployment to Vercel (GitHub Actions)',
+        description: 'Configured GitHub Actions to deploy a TypeScript-based frontend app to Vercel with build caching and preview deployments on PRs.',
+        techStack: ['TypeScript', 'Vercel', 'GitHub Actions'],
+        githubUrl: 'https://github.com/EphraimX/blbjzl-ai-accountability-application-github-actions',
+        metrics: { previewDeploys: '100%', zeroDowntime: true }
+      },
+      {
+        title: 'CI/CD Pipeline for Python Backend on Fly.io (Jenkins)',
+        description: 'Built a Jenkins pipeline to deploy a Python backend app to Fly.io using Docker. The pipeline includes build, test, and deployment stages.',
+        techStack: ['Python', 'Jenkins', 'Fly.io', 'Docker'],
+        githubUrl: 'https://github.com/EphraimX/blbjzl-ai-accountability-application-jenkins',
+        metrics: { deploymentAutomation: '100%', repeatability: 'High' }
+      },
+      {
+        title: 'Vercel Frontend CI/CD with GitLab CI/CD',
+        description: 'Set up a GitLab CI/CD pipeline for deploying a frontend app to Vercel. It includes linting, build checks, and production deploys triggered on merge.',
+        techStack: ['GitLab CI/CD', 'TypeScript', 'Vercel'],
+        githubUrl: 'https://gitlab.com/ephraimx/blbjzl-ai-accountability-application/-/tree/main/frontend',
+        metrics: { pipelineSpeed: 'Fast', DX: 'Improved for contributors' }
+      },
+      {
+        title: 'Deploying Python Backend to Fly.io with GitLab CI/CD',
+        description: 'Implemented a CI/CD pipeline using GitLab CI/CD to build and deploy a Python backend application to Fly.io, featuring Dockerized builds and environment-specific deploy stages.',
+        techStack: ['GitLab CI/CD', 'Docker', 'Fly.io', 'Python', 'CI/CD'],
+        githubUrl: 'https://gitlab.com/ephraimx/blbjzl-ai-accountability-application/-/tree/main/backend',
+        featured: true,
+        metrics: { deploymentTime: '6 mins', stages: '3', successRate: '100%' }
+      }
+    ];
 
   const { elementRef, isIntersecting } = useIntersectionObserver();
 

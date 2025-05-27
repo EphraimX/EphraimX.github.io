@@ -4,58 +4,58 @@ import WritingCard from './WritingCard';
 const Writing = () => {
   const articles = [
     {
-      title: 'Building Resilient Kubernetes Clusters: A Production Guide',
-      description: 'A comprehensive guide to designing and implementing highly available Kubernetes clusters with automated disaster recovery, monitoring, and security best practices.',
-      platform: 'Medium',
-      publishDate: 'March 15, 2024',
-      readTime: '12 min read',
-      tags: ['Kubernetes', 'DevOps', 'High-Availability', 'Production'],
-      url: 'https://medium.com/@example/kubernetes-resilient-clusters'
-    },
-    {
-      title: 'Infrastructure as Code: Terraform vs CloudFormation in 2024',
-      description: 'An in-depth comparison of Terraform and AWS CloudFormation, covering syntax, state management, modularity, and real-world use cases.',
-      platform: 'Dev.to',
-      publishDate: 'February 28, 2024',
-      readTime: '8 min read',
-      tags: ['IaC', 'Terraform', 'CloudFormation', 'AWS'],
-      url: 'https://dev.to/example/terraform-vs-cloudformation-2024'
-    },
-    {
-      title: 'Zero-Downtime Deployments with Blue-Green Strategy',
-      description: 'Learn how to implement blue-green deployments using AWS ECS, Application Load Balancer, and CodeDeploy for seamless application updates.',
-      platform: 'HashiCorp Blog',
-      publishDate: 'February 10, 2024',
-      readTime: '10 min read',
-      tags: ['CI/CD', 'AWS', 'ECS', 'Blue-Green', 'Deployment'],
-      url: 'https://hashicorp.com/blog/zero-downtime-deployments'
-    },
-    {
-      title: 'Monitoring Microservices: Observability Patterns and Tools',
-      description: 'Explore distributed tracing, metrics collection, and log aggregation patterns for microservices using Prometheus, Jaeger, and Grafana.',
-      platform: 'CNCF Blog',
-      publishDate: 'January 22, 2024',
-      readTime: '15 min read',
-      tags: ['Microservices', 'Observability', 'Prometheus', 'Grafana', 'Tracing'],
-      url: 'https://cncf.io/blog/microservices-observability'
-    },
-    {
-      title: 'Cost Optimization Strategies for Multi-Cloud Environments',
-      description: 'Practical approaches to reducing cloud costs across AWS, Azure, and GCP through resource right-sizing, reserved instances, and automation.',
-      platform: 'Cloud Native Computing',
-      publishDate: 'January 8, 2024',
-      readTime: '11 min read',
-      tags: ['Cost-Optimization', 'Multi-Cloud', 'FinOps', 'Automation'],
-      url: 'https://cloudnative.com/cost-optimization-strategies'
-    },
-    {
-      title: 'Securing Container Images: Best Practices and Tools',
-      description: 'A security-focused guide covering container image scanning, vulnerability management, and implementing security policies in CI/CD pipelines.',
-      platform: 'Security Weekly',
-      publishDate: 'December 15, 2023',
+      title: 'How to Build Transactional Password Reset Email Workflows',
+      description: 'A step-by-step developer guide to designing reliable and secure password reset email flows with Mailgun’s APIs.',
+      platform: 'Mailgun Blog',
+      publishDate: 'April 25, 2025',
       readTime: '9 min read',
-      tags: ['Security', 'Containers', 'Docker', 'Scanning', 'CI/CD'],
-      url: 'https://securityweekly.com/container-image-security'
+      tags: ['Email', 'Workflow', 'APIs', 'Security', 'Dev Life'],
+      url: 'https://www.mailgun.com/blog/dev-life/how-to-build-transactional-password-reset-email-workflows/'
+    },
+    {
+      title: 'The Importance of Model Versioning in Machine Learning',
+      description: 'A practical look at why and how to implement version control for machine learning models in modern AI workflows.',
+      platform: 'Openlayer Blog',
+      publishDate: 'March 14, 2023',
+      readTime: '7 min read',
+      tags: ['Machine Learning', 'MLOps', 'Versioning', 'AI'],
+      url: 'https://www.openlayer.com/blog/post/the-importance-of-model-versioning-in-machine-learning'
+    },
+    {
+      title: 'Finscope 2023 Interactive Report Launch',
+      description: 'Developed the frontend and backend for the interactive data platform powering Finscope’s financial access survey insights.',
+      platform: 'DataProducts',
+      publishDate: 'November 14, 2023',
+      readTime: '6 min read',
+      tags: ['Data Visualization', 'Django', 'React', 'Research'],
+      url: 'https://dataproducts.io/finscope-report/'
+    },
+    {
+      title: 'How to Deploy a Python Backend to Fly.io Using GitHub Actions',
+      description: 'A complete walkthrough on containerizing and deploying a Python app to Fly.io with GitHub Actions for automated CI/CD.',
+      platform: 'Dev.to',
+      publishDate: 'May 2025',
+      readTime: '10 min read',
+      tags: ['CI/CD', 'GitHub Actions', 'Fly.io', 'Python'],
+      url: 'https://dev.to/ephraimx/how-to-set-up-cicd-for-a-python-backend-application-on-flyio-using-github-actions-1f09'
+    },
+    {
+      title: 'How to Deploy a Frontend App to Vercel Using GitHub Actions',
+      description: 'Learn how to set up a Jenkins pipeline to automate the deployment of a frontend TypeScript app to Vercel.',
+      platform: 'Dev.to',
+      publishDate: 'May 2025',
+      readTime: '9 min read',
+      tags: ['CI/CD', 'Jenkins', 'Vercel', 'Frontend', 'TypeScript'],
+      url: 'https://dev.to/ephraimx/a-practical-guide-to-deploying-frontend-apps-on-vercel-using-github-actions-3pf4'
+    },
+    {
+      title: 'How to Deploy a Python Backend to Fly.io Using GitLab CI/CD',
+      description: 'Step-by-step guide on using GitLab CI/CD to build and deploy a Dockerized Python backend application to Fly.io.',
+      platform: 'Dev.to',
+      publishDate: 'May 2025',
+      readTime: '9 min read',
+      tags: ['CI/CD', 'GitLab', 'Python', 'Fly.io', 'DevOps'],
+      url: 'https://dev.to/ephraimx/how-to-automate-python-backend-deployments-to-flyio-with-gitlab-cicd-3ekf'
     }
   ];
 
@@ -89,16 +89,16 @@ const Writing = () => {
 
         <div className="text-center mt-12">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            {/* <a
               href="https://medium.com/@example"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border-2 border-blue-500/50 text-blue-400 font-semibold rounded-lg hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 backdrop-blur-sm"
             >
               More on Medium
-            </a>
+            </a> */}
             <a
-              href="https://dev.to/example"
+              href="https://dev.to/ephraimx"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 border-2 border-cyan-500/50 text-cyan-400 font-semibold rounded-lg hover:bg-cyan-500/10 hover:border-cyan-400 transition-all duration-300 backdrop-blur-sm"

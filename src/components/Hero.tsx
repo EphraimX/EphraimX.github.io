@@ -47,7 +47,6 @@ const Hero = () => {
               >
                 Cloud Infrastructure
               </span>
-              <br />
               <span 
                 className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-fade-in block"
                 style={{ animationDelay: '0.4s', animationFillMode: 'both' }}

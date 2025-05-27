@@ -24,7 +24,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Portfolio
+              EphraimX
             </span>
           </div>
 
@@ -45,13 +45,13 @@ const Navigation = () => {
 
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+            <a href="https://github.com/EphraimX" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+            <a href="https://linkedin.com/in/oghenefejiro-esosuota" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:contact@example.com" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+            <a href="mailto:personal.ephraim@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
               <Mail size={20} />
             </a>
           </div>
@@ -81,13 +81,13 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="flex items-center space-x-4 px-3 py-2">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                <a href="https://github.com/EphraimX" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                   <Github size={20} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                <a href="https://linkedin.com/in/oghenefejiro-esosuota" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                   <Linkedin size={20} />
                 </a>
-                <a href="mailto:contact@example.com" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                <a href="mailto:personal.ephraim@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                   <Mail size={20} />
                 </a>
               </div>

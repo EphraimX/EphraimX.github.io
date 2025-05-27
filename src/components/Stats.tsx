@@ -4,10 +4,10 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 const Stats = () => {
   const stats = [
-    { label: "Years Experience", value: 5, suffix: "+" },
-    { label: "Projects Completed", value: 50, suffix: "+" },
+    { label: "Years Experience", value: 3, suffix: "+" },
+    { label: "Projects Completed", value: 20, suffix: "+" },
     { label: "Articles Written", value: 25, suffix: "+" },
-    { label: "Cost Reduction", value: 40, suffix: "%" }
+    { label: "Cost Reduction", value: 50, suffix: "%" }
   ];
 
   const { elementRef, isIntersecting } = useIntersectionObserver();
